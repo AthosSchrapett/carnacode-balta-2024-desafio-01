@@ -13,6 +13,22 @@ body {
   background-color: #2e1462;
 }
 
+.content-box {
+  display: grid;
+  background-color: #ffffff;
+  padding: 25px;
+  justify-content: space-evenly;
+  border-radius: 13px;
+  justify-items: center;
+}
+
+.sub-title {
+  display: inline-table;
+  text-align: center;
+  width: 239px;
+  height: 38px;
+}
+
 .group {
   display: contents;
 }
@@ -44,9 +60,9 @@ body {
 .content-block {
   width: 50px;
   height: 50px;
-  background-color: #F6F6F6;
-  border-radius: 8px; 
-  grid-area: content-block; 
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  grid-area: content-block;
 }
 
 .history-header-weight {
@@ -64,12 +80,12 @@ body {
 }
 
 .history-header-time .date {
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 
 .description {
   font-size: 14px;
-  grid-area: description; 
+  grid-area: description;
 }
 
 .description p {
@@ -78,16 +94,16 @@ body {
 
 .line-divider {
   margin-top: 5px;
-  border: 1px solid #e8e8e8; 
-  grid-area: line-divider; 
+  border: 1px solid #e8e8e8;
+  grid-area: line-divider;
 }
 
 .history-area {
   display: grid;
   grid-template-areas:
-    'content-block history-header-weight history-header-weight history-header-weight history-header-weight history-header-time'
-    'content-block description description description description description'
-    'content-block line-divider line-divider line-divider line-divider line-divider';
+    "content-block history-header-weight history-header-weight history-header-weight history-header-weight history-header-time"
+    "content-block description description description description description"
+    "content-block line-divider line-divider line-divider line-divider line-divider";
   gap: 10px;
   margin-top: 20px;
   width: 343px;
@@ -164,6 +180,14 @@ input[type="checkbox"]:checked::before {
   border-radius: 30px;
   justify-content: center;
   align-items: center;
+}
+
+.position-logo {
+  position: absolute;
+}
+
+.margin-login-logo {
+  margin-bottom: 39rem;
 }
 
 .logo-content-max-size {
