@@ -190,6 +190,10 @@ input[type="checkbox"]:checked::before {
   margin-bottom: 39rem;
 }
 
+.margin-login-create {
+  margin-bottom: 48rem;
+}
+
 .logo-content-max-size {
   width: 280px;
   height: 280px;
