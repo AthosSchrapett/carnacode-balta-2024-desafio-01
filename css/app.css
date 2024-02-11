@@ -198,6 +198,10 @@ input[type="checkbox"]:checked::before {
   margin-bottom: 36rem;
 }
 
+.margin-login-result {
+  margin-bottom: 27rem;
+}
+
 .logo-content-max-size {
   width: 280px;
   height: 280px;
