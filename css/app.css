@@ -21,7 +21,6 @@ body {
   width: 343px;
   height: 50px;
   border: 1px solid #e8e8e8;
-  border-radius: 10px;
   padding: 5px;
   font-size: 16px;
   background-color: #f6f6f6;
@@ -30,8 +29,69 @@ body {
   padding-left: 15px;
 }
 
+.form-text-input {
+  border-radius: 10px;
+}
+
+.form-search {
+  border-radius: 100px;
+}
+
 .group .form-text::placeholder {
   color: #bdbdbd;
+}
+
+.content-block {
+  width: 50px;
+  height: 50px;
+  background-color: #F6F6F6;
+  border-radius: 8px; 
+  grid-area: content-block; 
+}
+
+.history-header-weight {
+  font-weight: bold;
+  grid-area: history-header-weight;
+}
+
+.history-header-time {
+  font-size: 14px;
+  grid-area: history-header-time;
+}
+
+.history-header-time .time {
+  color: #522020;
+}
+
+.history-header-time .date {
+  color: #BDBDBD;
+}
+
+.description {
+  font-size: 14px;
+  grid-area: description; 
+}
+
+.description p {
+  display: contents;
+}
+
+.line-divider {
+  margin-top: 5px;
+  border: 1px solid #e8e8e8; 
+  grid-area: line-divider; 
+}
+
+.history-area {
+  display: grid;
+  grid-template-areas:
+    'content-block history-header-weight history-header-weight history-header-weight history-header-weight history-header-time'
+    'content-block description description description description description'
+    'content-block line-divider line-divider line-divider line-divider line-divider';
+  gap: 10px;
+  margin-top: 20px;
+  width: 343px;
+  height: 77px;
 }
 
 .chk-box-group {
@@ -102,14 +162,20 @@ input[type="checkbox"]:checked::before {
   background-color: #ffffff;
   border: 6px solid #45fefe;
   border-radius: 30px;
-  width: 280px;
-  height: 280px;
   justify-content: center;
   align-items: center;
 }
 
+.logo-content-max-size {
+  width: 280px;
+  height: 280px;
+}
+
+.logo-content-min-size {
+  width: 140px;
+  height: 140px;
+}
+
 .logo-content .logo {
-  border-radius: 30px;
-  width: 180px;
-  height: 180px;
+  border-radius: 20px;
 }
